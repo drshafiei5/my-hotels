@@ -1,0 +1,26 @@
+import React from 'react';
+import { useSelector } from 'react-redux';
+import { getBookingsByUserId } from '../../../../store/bookings';
+import { getCurrentUserId } from '../../../../store/users';
+import BookingCard from '../../booking/BookingCard/BookingCard';
+
+const ProfileBooking = () => {
+  const currentUserId = useSelector(getCurrentUserId());
+  const bookings = useSelector(getBookingsByUserId(currentUserId || 'not found'));
+
+  return (
+    <div style={{ width: '100%' }}>
+      <h1 style={{ marginBottom: '20px' }}>رزروهای من</h1>
+      <div className='booking-list' style={{ width: '100%' }}>
+        {
+          bookings.map((booking: any) => (
+            <BookingCard key={booking._id} {...booking} />
+          ))
+        }
+        {bookings.length === 0 && <h3>لیست رزرو خالی است</h3>}
+      </div>
+    </div>
+  );
+};
+
+export default ProfileBooking;

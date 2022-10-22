@@ -1,0 +1,24 @@
+.main-home__page {
+  background: url('../../../../assets/img/slide3.jpg') no-repeat;
+  background-size: cover;
+}
+
+.main-home__wrapper {
+  min-height: 90vh;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.main__text-wishes {
+  padding: 5px;
+  color: $accent;
+  max-width: 300px;
+  text-align: right;
+  border-radius: 5px;
+  font-weight: 500;
+  margin-bottom: 20px;
+  align-self: flex-end;
+  background-color: white;
+}

@@ -1,0 +1,40 @@
+.rating-wrapper {
+  direction: ltr;
+  display: flex;
+  align-items: center;
+  margin: 0;
+
+  &.MuiButtonBase-root {
+    border-radius: 50px;
+  }
+
+  & .MuiRating-root {
+    color: $purple;
+  }
+
+  & .MuiRating-icon {
+    &.MuiRating-iconFilled {
+      color: $purple;
+    }
+
+    &.MuiRating-iconHover {
+      color: $purple;
+    }
+  }
+}
+
+.rating-field {
+  display: flex;
+  align-items: center;
+}
+
+.rating-label {
+  margin-left: 10px;
+  display: block;
+  font-weight: 700;
+}
+
+.rating-feedback {
+  margin-right: 5px;
+  color: $accent50;
+}

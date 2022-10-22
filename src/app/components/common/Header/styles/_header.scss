@@ -1,0 +1,43 @@
+.header {
+  height: 70px;
+  position: relative;
+
+  display: flex;
+  align-items: center;
+
+  background-color: #fff;
+  box-shadow: 0 10px 20px $accent5;
+  z-index: 10;
+}
+
+.header__inner {
+  display: flex;
+  align-items: center;
+}
+
+.header__logo {
+  margin-left: 50px;
+  z-index: 100;
+}
+
+.header__divider {
+  &.MuiDivider-root {
+    margin-left: 15px;
+    margin-right: auto;
+  }
+}
+
+.header-buttons {
+  margin-right: auto;
+  display: flex;
+  gap: 10px;
+  justify-content: space-between;
+}
+
+.header-buttons-button {
+  text-decoration: none;
+
+  &>button {
+    padding: 6px 14px !important;
+  }
+}

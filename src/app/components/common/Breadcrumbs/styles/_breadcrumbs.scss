@@ -1,0 +1,11 @@
+.breadcrumbs {
+  margin: 20px 0;
+}
+
+.breadcrumbs-item {
+  color: $blue;
+
+  &--last {
+    color: $accent50;
+  }
+}
